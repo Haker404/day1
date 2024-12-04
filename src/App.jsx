@@ -15,6 +15,13 @@ import Shirt from "./img/Shirt.svg"
 import ArrowLeft from "./img/ArrowLeft.svg"
 import ArrowRight from "./img/ArrowRight.svg"
 import EenMan from "./img/EenMan.svg"
+import man from "./img/man.svg"
+import woman from "./img/woman.svg"
+import ArrowUpRight from "./img/ArrowUpRight.svg"
+import FastCompany from "./img/FastCompany.svg"
+import Forbes from "./img/Forbes.svg"
+import Bloomberg from "./img/Bloomberg.svg"
+import ArrowUpRightPurple from "./img/ArrowUpRightPurple.svg"
 
 import { version } from 'react'
 
@@ -66,14 +73,42 @@ function App() {
 </div>
       <div className="">
       <div className="bg-white w-full h-[44px] mt-7"></div>
-         <div className="man w-[596px] h-[636px] ml-80 rounded-[10px] "></div>
-         <img src={EenMan} alt="" className='mt-[-635px] ml-[330px]' />
-          <button className='bg-black text-white absolute ml-[20px] px-4 py-3 bottom-10 rounded-[10px]'>Shop Sweaters</button>
+         <div className="man w-[650px] h-[636px] ml-[200px] rounded-[10px] "></div>
+         <img src={EenMan} alt="" className='mt-[-635px] ml-[200px]' />
+          <button className='bg-black text-white absolute ml-[250px] px-4 py-3 rounded-[10px] mt-[-80px]'>Shop Sweaters</button>    
+      <div className="mt-[-635px]  orngbg w-[650px] h-[636px] ml-[950px] mb-[600px] rounded-[10px]"></div>
+      <p className=' text-[40px] items-start flex font-bold ml-[1000px] mt-[-1200px] py-3 w-[516px] h-[278px] '>“ First Light promises quality, timeless designs and with our mission it is truly a buy it for life purchase. “</p>
+      <p className=' text-[20px] items-start flex font-bold ml-[1000px] mt-[200px] py-3 '>— Guera Latissa, Creative Director</p>
       </div>
-
-
-
-
+      <div classname="box items-center flex ">
+      <img className='w-[608px] rounded-l-md mt-[150px] ml-[300px]' src={woman} alt="" />
+      <img className='w-[608px] rounded-r-md ml-[900px] mb-[-300px] mt-[-640px] ' src={man} alt="" />
+      <p className=' text-[20px] items-start flex ml-[950px] mt-[230px] py-3 '>MEN</p>
+      <p className=' text-[20px] items-start flex ml-[350px] mt-[-50px] py-3 '>WOMEN</p>
+      <img className='ml-[430px] mb-[-305px] mt-[-35px] ' src={ArrowUpRight} alt="" />
+      <img className=' ml-[1000px] mb-[-305px] mt-[280px] ' src={ArrowUpRight} alt="" />
+      </div>
+      <div className=''>
+      <header className=' flex justify-center px-3 py-3'>
+        <p className='text-sm front-bold text-[50px] mt-[450px]'> <b>Hot off the press</b></p>
+      </header>
+      </div>
+      <div className='mt-10 flex items-center justify-center'>
+        <div className='w-[1216px] h-[286px] border-2 rounded-md flex justify-between'>
+          <div>
+          <img src={Bloomberg} alt="" className='px-[50px] py-[40px]' />
+          <p className='text-[18px] w-[298px] h-[75px] ml-[50px] '>“First Light: Where great design and the finest materials unite in ultimate comfort”</p>
+          </div>
+          <div>
+          <img src={Forbes} alt="" className=' py-[40px]' />
+          <p className='text-[18px] w-[298px] h-[75px] '>“First light proves it is possible to combine great design with the finest materials available.”</p>
+          </div>
+          <div>
+          <img src={FastCompany} alt="" className=' py-[40px]' />
+          <p className='text-[18px] w-[298px] h-[75px] '>“Redefining excellence with premium materials and visionary robust design.”</p>
+          </div>
+        </div>
+      </div>
       </body>
     </div>
   );
